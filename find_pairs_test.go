@@ -1,6 +1,9 @@
 package main
-import "fmt"
 
+import (
+	"fmt"
+	"testing"
+)
 
 func findPairsWithSum(arr1, arr2 []int, x int) {
 	arr2Map := make(map[int]bool)
@@ -17,8 +20,7 @@ func findPairsWithSum(arr1, arr2 []int, x int) {
 	}
 }
 
-
-func main() {
+func TestFindPairsWithSum(t *testing.T) {
 	// Example 1
 	arr1 := []int{-1, -2, 4, -6, 5, 7}
 	arr2 := []int{6, 3, 4, 0}

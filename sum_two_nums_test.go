@@ -1,8 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func main() {
+func TestMain(t *testing.T) {
 	var a, b int
 	fmt.Print("Ingresa el primer número: ")
 	fmt.Scan(&a)
